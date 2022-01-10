@@ -2,18 +2,18 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Orders from "./components/Orders";
 import Prototypes from "./components/Prototypes";
-import AppStateContext from "./contexts/AppStateContext";
+import AppStateProvider from "./providers/AppStateProvider";
 
 function App() {
   return (
-    <AppStateContext>
+    <AppStateProvider>
       <Header />
       <div className="container">
         <Prototypes />
         <Orders />
         <Footer />
       </div>
-    </AppStateContext>
+    </AppStateProvider>
   );
 }
 
